@@ -1,0 +1,52 @@
+:root {
+    --color-default: #fbc531;
+    --color-texts: #2f3640;
+    --font-default: 'Times New Roman', Times, serif;
+    --color-shadow: #353b48;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.menu-container {
+    height: 80px;
+    width: 100%;
+    border: solid #718093;
+}
+
+
+.hero-container {
+    height: 400px;
+    width: 100%;
+    border: solid #718093;
+}
+
+
+.experiencia-container {
+    height: 300px;
+    width: 100%;
+    border: solid #718093;
+}
+
+
+.lazer-container {
+    height: 150px;
+    width: 100%;
+    border: solid #718093;
+}
+
+
+.testemunhos-container {
+    height: 300px;
+    width: 100%;
+    border: solid #718093;
+}
+
+footer{
+    background-color: #718093;
+    height: 100px;
+    width: 100%;
+}
