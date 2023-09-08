@@ -46,7 +46,52 @@
 }
 
 footer{
-    background-color: #718093;
+    background-color:var(--color-default);
     height: 100px;
+    color:var(--color-texts);
     width: 100%;
 }
+.footer_link
+{
+    text-decoration: none;
+}
+#footer_content
+{
+background-color: var(--color-default);
+display: grid;
+grid-template-columns: repeat(3,2fr);
+padding: 2rem 3.5rem;
+}
+#footer_contats h1
+{margin-bottom: 0.75rem;   
+}
+#footer_social_midia
+{
+display: flex;
+gap: 1rem;
+margin-top: 1.0rem;
+}
+#footer_social_midia .footer_link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.rem;
+    border-radius: 50%;
+}
+
+.footer-list
+{
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+list-style: none;
+}
+
+.footer_link:hover
+{
+    color:#ff2992;
+}
+
+
