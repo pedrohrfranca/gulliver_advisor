@@ -1,7 +1,7 @@
 :root {
     --color-default: #fbc531;
     --color-texts: #2f3640;
-    --font-default: 'Times New Roman', Times, serif;
+    --font-default:  Arial, sans-serif;
     --color-shadow: #353b48;
 }
 
@@ -281,3 +281,4 @@ article img {
 .btn:hover {
     background-color: transparent;
 }
+
