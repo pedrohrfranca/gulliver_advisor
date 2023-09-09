@@ -1,13 +1,19 @@
 :root {
     --color-default: #fbc531;
     --color-texts: #2f3640;
-    --font-default: 'Times New Roman', Times, serif;
+    --font-default:  Arial, sans-serif;
     --color-shadow: #353b48;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+h2,
+h3 {
+    font-family: var(--font-default);
+    color: var(--color-texts);
 }
 
 .menu-container {
@@ -30,7 +36,7 @@
     /* border: solid #718093; */
 }
 
-#lazer-titulo{
+#lazer-titulo {
     padding-bottom: 2%;
 }
 
@@ -49,23 +55,25 @@
     width: 200px;
     margin: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0,.8);
+    background-color: rgba(0, 0, 0, .8);
     position: relative;
+    border-radius: 20px;
 }
 
 .lazer-item img {
     opacity: 0.2;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     transform: scale(1.15);
     transition: transform 0.7s, opacity 0.7s;
 }
 
-.lazer-item p{
+.lazer-item p {
     position: absolute;
-    top: 77px;
+    top: 24px;
     left: 7px;
     color: whitesmoke;
+    letter-spacing: 2px;
 }
 
 .lazer-item img:hover {
@@ -73,7 +81,7 @@
     transform: scale(1.03);
 }
 
-#testemunhos-titulo{
+#testemunhos-titulo {
     padding-bottom: 2%;
 }
 
@@ -86,55 +94,66 @@
     justify-content: space-around;
 }
 
-.testemunho{
+.testemunho {
+    position: relative;
     width: 23%;
+    -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+    height: 165px;
+    padding: 8px;
+    border-radius: 9px;
+    height: 204px;
 }
 
-.testemunho h3 + p {
+.testemunho h3+p {
     letter-spacing: 2px;
 }
 
 .testemunho p:last-child {
     text-align: end;
     font-weight: bold;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
 }
 
 footer {
     background-color: #718093;
     height: 100px;
-    color:var(--color-texts);
+    color: var(--color-texts);
     width: 100%;
 }
 
-footer{
-    background-color:var(--color-default);
+footer {
+    background-color: var(--color-default);
     height: 100px;
-    color:var(--color-texts);
+    color: var(--color-texts);
     width: 100%;
 }
 
-.footer_link
-{
+.footer_link {
     text-decoration: none;
 }
-#footer_content
-{
-background-color: var(--color-default);
-display: grid;
-grid-template-columns: repeat(3,2fr);
-padding: 2rem 3.5re
+
+#footer_content {
+    background-color: var(--color-default);
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 2rem 3.5re
 }
-#footer_contats h1
-{margin-bottom: 0.75rem;   
+
+#footer_contats h1 {
+    margin-bottom: 0.75rem;
 }
-#footer_social_midia
-{
-display: flex;
-gap: 1rem;
-margin-top: 1.0rem;
+
+#footer_social_midia {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.0rem;
 }
-#footer_social_midia .footer_link
-{
+
+#footer_social_midia .footer_link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,18 +162,16 @@ margin-top: 1.0rem;
     border-radius: 50%;
 }
 
-.footer-list
-{
-display: flex;
-flex-direction: column;
-gap: 0.75rem;
-text-decoration: none;
-list-style: none;
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-decoration: none;
+    list-style: none;
 }
 
-.footer_link:hover
-{
-    color:#ff2992;
+.footer_link:hover {
+    color: #ff2992;
 }
 
 h2 {
@@ -184,6 +201,7 @@ article {
     display: inline-block;
     align-items: center;
 }
+
 article img {
     width: 300px;
     height: 350px;
@@ -219,10 +237,10 @@ article img {
     cursor: pointer;
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 50vh;
-    background-image: linear-gradient(to left,rgba(0, 0, 0, .3),rgba(247, 200, 47, 0.1)),
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .3), rgba(247, 200, 47, 0.1)),
         url(../images/rio_cristo_aereo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,27 +253,32 @@ article img {
     text-align: center;
 
 }
+
 .hero h1 {
-    font-size:12vmin;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+    font-size: 12vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
+
 .btn {
-    background-color:aqua;
+    background-color: aqua;
     width: 20%;
     align-content: center;
-    padding:9px 35px;
+    padding: 9px 35px;
     border: 2px solid aqua;
     border-radius: 5px;
-    transition:1s;
-    font-family:Arial, Helvetica, sans-serif;
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     text-align: center;
 
 }
+
 .btn:hover {
     background-color: transparent;
 }
+
