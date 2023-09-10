@@ -1,5 +1,5 @@
 :root {
-    --color-default: #fbc531;
+    --color-default: #BF9B30;
     --color-texts: #2f3640;
     --font-default: Arial, sans-serif;
     --color-shadow: #353b48;
@@ -93,6 +93,7 @@ h3 {
 }
 
 .testemunho {
+    background-color: #ffffff;
     position: relative;
     width: 23%;
     -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.75);
@@ -106,6 +107,7 @@ h3 {
 
 .testemunho h3+p {
     letter-spacing: 2px;
+    padding: 10px;
 }
 
 .testemunho p:last-child {
@@ -116,11 +118,13 @@ h3 {
     right: 12px;
 }
 
+
 footer {
     background-color: #718093;
     height: 100px;
     color: var(--color-texts);
     width: 100%;
+    padding: 20px;
 }
 
 footer {
@@ -132,6 +136,7 @@ footer {
 
 .footer_link {
     text-decoration: none;
+    color: white;
 }
 
 #footer_content {
@@ -141,11 +146,19 @@ footer {
     padding: 2rem 3.5re
 }
 
+#footer_contats {
+    color: white;
+}
+
 #footer_contats h1 {
     margin-bottom: 0.75rem;
+    font-style: italic;
+    color: #FFD447;
+    
 }
 
 #footer_social_midia {
+    color: white;
     display: flex;
     gap: 1rem;
     margin-top: 1.0rem;
@@ -169,21 +182,31 @@ footer {
 }
 
 .footer_link:hover {
-    color: #ff2992;
+    color: #FFD447;
+}
+
+h3 {
+    text-decoration: none;
+    color: #FFD447;
+    font-style: italic;
 }
 
 h2 {
+    color: #FFBF00;
     margin-top: 20px;
     margin-left: 60px;
     padding-top: 15px;
     display: flex;
     justify-content: center;
+    font-style: italic;
 }
 
 .titulo_referencias {
     max-width: fit-content;
     margin: 0 auto;
     background-color: #ebf4f9;
+    font-style: italic;
+    font-size: 13px;
 }
 
 
@@ -204,7 +227,7 @@ article img {
     width: 300px;
     height: 350px;
     border-radius: 20px;
-    border: 2px solid rgba(2, 1, 1, 0.7);
+    border: 2px solid #FFE878;
 }
 
 .imperdiveis-text {
@@ -227,7 +250,7 @@ article img {
 }
 
 .imperdiveis-text:hover {
-    background-color: #f5e14d;
+    background-color: #FFE878;
     color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, color 0.3s;
@@ -252,6 +275,10 @@ article img {
 
 }
 
+.hero-title-main {
+    color: #FFD447;
+}
+
 .hero h1 {
     font-size: 12vmin;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -263,16 +290,19 @@ article img {
 }
 
 .btn {
-    background-color: #23d2d0;
+    color: #000000;
+    background-color: #FFE878;
     width: 20%;
     align-content: center;
     padding: 9px 35px;
-    border: 2px solid #23d2d0;
+    border: 2px solid #BF9B30;
     border-radius: 5px;
     transition: 1s;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
+    font-weight: bold;
     text-align: center;
+    text-decoration: none;
 
 }
 
@@ -283,7 +313,7 @@ article img {
 
 /* Style the navigation menu */
 nav {
-    background-color: #172028;
+    background-color:  #A67C00;
     color: #fff;
 }
 
@@ -317,17 +347,17 @@ nav {
 }
 
 .nav-menu a:hover {
-    color: #23d2d0;
+    color: #FFD447;
 }
 
 .sub-title-main {
-    color: #23d2d0;
+    color: #FFD447;
 }
 
 .nav-menu li:last-child {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #23d2d0;
+    background-color: #FFD447;
     color: #172028;
     text-decoration: none;
     border-radius: 5px;
