@@ -106,7 +106,7 @@ h3 {
     height: 165px;
     padding: 8px;
     border-radius: 9px;
-    height: 204px;
+    height: 265px;
 }
 
 .testemunho h3+p {
@@ -128,7 +128,6 @@ footer {
     height: 100px;
     color: var(--color-texts);
     width: 100%;
-    padding: 20px;
 }
 
 .footer_link {
@@ -140,7 +139,7 @@ footer {
     background-color: var(--color-default);
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    padding: 2rem 3.5re
+    padding: 2rem 3.5rem
 }
 
 #footer_contats {
