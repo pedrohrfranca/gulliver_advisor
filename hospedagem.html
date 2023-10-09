@@ -30,12 +30,219 @@
                 </div>
             </nav>
         </div>
-
-      
-        <p>Conteudo aqui</p>
-
-
     </div>
+
+        <div class="container1">
+
+<!-- style não esta pegando do main.css referenced. Não achei o problema. Incluido aqui até encontrar -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container1 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .review-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .review-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 21%; /* Adjust the width as needed */
+        margin-bottom: 10px;
+    }
+
+    .stars {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .stars input[type="radio"] {
+        display: none;
+    }
+
+    .stars label {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .stars label:before {
+        content: '\2605'; /* Unicode character for a star */
+        color: #ccc;
+    }
+
+    .stars input[type="radio"]:checked ~ label:before {
+        color: #ffcc00; /* Change the star color for checked stars */
+    }
+
+    .review-text {
+        margin-top: 10px;
+    }
+
+    .review-text input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .submit-button {
+        display: block;
+        margin-top: 10px;
+        background-color: #BF9B30;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<!-- Fim do style incluido temporariamente -->
+<div class="container1"></div>
+
+            <h1>Avalie suas experiências!</h1>
+            
+            <!-- First Review Item -->
+            <div class="review-item">
+                <div class="image-wrapper">
+                    <div class="image">
+                        <img src="images/rio_teatro_municipal1.jpg" alt="Teatro Municipal Rio">
+                        <p>Experiência 1</p>
+                        <div class="stars">
+                            <label for="star1_1"></label>
+                            <input type="radio" id="star1_1" name="rating1" value="1">
+                            <label for="star1_2"></label>
+                            <input type="radio" id="star1_2" name="rating1" value="2">
+                            <label for="star1_3"></label>
+                            <input type="radio" id="star1_3" name="rating1" value="3">
+                            <label for="star1_4"></label>
+                            <input type="radio" id="star1_4" name="rating1" value="4">
+                            <label for="star1_5"></label>
+                            <input type="radio" id="star1_5" name="rating1" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                    
+                    <!-- Repeat the structure for more images/review items -->
+                    
+                    <div class="image">
+                        <img src="images/rio_teatro_municipal1.jpg" alt="Teatro Municipal Rio">
+                        <p>Experiência 2</p>
+                        <div class="stars">
+                            <label for="star2_1"></label>
+                            <input type="radio" id="star2_1" name="rating2" value="1">
+                            <label for="star2_2"></label>
+                            <input type="radio" id="star2_2" name="rating2" value="2">
+                            <label for="star2_3"></label>
+                            <input type="radio" id="star2_3" name="rating2" value="3">
+                            <label for="star2_4"></label>
+                            <input type="radio" id="star2_4" name="rating2" value="4">
+                            <label for="star2_5"></label>
+                            <input type="radio" id="star2_5" name="rating2" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                                    <!-- Repeat the structure for more images/review items -->
+                    
+                                    <div class="image">
+                                        <img src="images/rio_teatro_municipal1.jpg" alt="Teatro Municipal Rio">
+                                        <p>Experiência 3</p>
+                                        <div class="stars">
+                                            <label for="star2_1"></label>
+                                            <input type="radio" id="star2_1" name="rating2" value="1">
+                                            <label for="star2_2"></label>
+                                            <input type="radio" id="star2_2" name="rating2" value="2">
+                                            <label for="star2_3"></label>
+                                            <input type="radio" id="star2_3" name="rating2" value="3">
+                                            <label for="star2_4"></label>
+                                            <input type="radio" id="star2_4" name="rating2" value="4">
+                                            <label for="star2_5"></label>
+                                            <input type="radio" id="star2_5" name="rating2" value="5">
+                                        </div>
+                                        <div class="review-text">
+                                            <input type="text" placeholder="Conte-nos como foi!">
+                                        </div>
+                                        <button class="submit-button">Enviar opinião</button>
+                                    </div>
+                                                    <!-- Repetição da estrutura para mais itens a serem avaliados -->
+                    
+                    <div class="image">
+                        <img src="images/rio_teatro_municipal1.jpg" alt="Teatro Municipal Rio">
+                        <p>Experiência 4</p>
+                        <div class="stars">
+                            <label for="star2_1"></label>
+                            <input type="radio" id="star2_1" name="rating2" value="1">
+                            <label for="star2_2"></label>
+                            <input type="radio" id="star2_2" name="rating2" value="2">
+                            <label for="star2_3"></label>
+                            <input type="radio" id="star2_3" name="rating2" value="3">
+                            <label for="star2_4"></label>
+                            <input type="radio" id="star2_4" name="rating2" value="4">
+                            <label for="star2_5"></label>
+                            <input type="radio" id="star2_5" name="rating2" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-- Fim conteudo 1 avaliação de experiências incluido por Jayme -->
+
+
+</div>      
+<!-- <p>Conteudo 2</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 3</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 4</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 5</p> -->
+</div>
 
 
     <footer>
