@@ -1,0 +1,218 @@
+:root {
+    --color-default: #BF9B30;
+    --color-texts: #000000;
+    --font-default: Arial, sans-serif;
+    --color-shadow: #353b48;
+    --color-tittle: #FFD447;
+    --light-yellow: #FFE878;
+    --dark-yellow: #BF9B30;
+    --hero: rgba(247, 200, 47, 0.1);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-default);
+}
+
+/* conteudo 1 hospedagem, revies experiencias */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 21%; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+.stars {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.stars label:before {
+    content: '\2605'; /* Unicode character for a star */
+    color: #ccc;
+}
+
+.stars input[type="radio"]:checked ~ label:before {
+    color: #ffcc00; /* Change the star color for checked stars */
+}
+
+.review-text {
+    margin-top: 10px;
+}
+
+.review-text input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+/* fim css conteudo 1 hospedagem*/
+
+
+/* conteudo 2 hospedagem (PEDRO FRANCA), inserir recomendaçoes */
+
+.recomendacoes {
+    width: 100%;
+    margin-top: 40px;
+    padding: 32px;
+    border-top: solid 2px red;
+}
+
+.recomendacoes h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+#campo-hospedagem {
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 350px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+}
+
+#campo-hospedagem:hover {
+    background-color: var(--light-yellow);
+}
+
+.recomendacoes h3 {
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-texts);
+    margin: 25px 0 10px 0;
+}
+
+#mes, #ano {
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    color: white; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out; 
+    border: none;
+}
+
+#mes:hover, #ano:hover {
+    background-color: var(--light-yellow);
+}
+
+textarea {
+    width: 100%;
+    max-width: 450px; 
+    height: 100px; 
+    padding: 10px; 
+    font-size: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: none; 
+    cursor: pointer; 
+    transition: background-color 0.1s ease-in-out;
+}
+
+textarea:hover {
+    background-color: var(--light-yellow);
+}
+
+/* Estilo para os botões */
+.recomendacoes button {
+    display: inline-block; /* Tornar os ícones elementos em linha */
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Borda arredondada */
+    margin: 2px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Cursor como mãozinha para indicar que é clicável */
+    text-align: center; /* Alinhar o texto ao centro do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #ffffff;
+}
+
+  /* Estilo para o hover (quando o mouse passa por cima) */
+.recomendacoes button:hover {
+    background-color: var(--light-yellow); /* Cor de fundo mais escura no hover */
+}
+
+.verde {
+    color: green;
+    font-size: 25px;
+}
+
+.cinza {
+    color: grey;
+    font-size: 25px;
+}
+
+.vermelho {
+    color: red;
+    font-size: 25px;
+}
+
+/* fim css conteudo 2 hospedagem*/
