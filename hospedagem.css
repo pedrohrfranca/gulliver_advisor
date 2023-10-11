@@ -127,7 +127,7 @@ h1 {
     width: 100%;
     margin-top: 20px;
     padding: 32px;
-    /* border-top: solid 2px red; */
+    text-align-last: center;
 }
 
 .recomendacoes h1 {
@@ -337,7 +337,8 @@ textarea:hover {
     width: 90%;
     position: absolute;
     top: 23rem;
-    left: 5rem;
+    left: 5%;
+
 }
 
 section:hover .descricao-hotel {
