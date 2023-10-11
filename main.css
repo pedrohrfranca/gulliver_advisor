@@ -158,6 +158,7 @@ footer {
     display: flex;
     gap: 1rem;
     margin-top: 1.0rem;
+    flex-wrap: wrap;
 }
 
 #footer_social_midia .footer_link {
@@ -319,6 +320,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -330,6 +332,7 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-menu li {

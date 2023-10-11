@@ -9,7 +9,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="hospedagem.css">
+    <link rel="stylesheet" href="./hospedagem.css">
 </head>
 
 <body>
@@ -22,10 +22,13 @@
                 <div class="container">
                     <h1 class="logo">Gulliver<span class="sub-title-main">Advisor</span></h1>
                     <ul class="nav-menu">
-                        <li><a href="./Index.html"><span class="menu-icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
-                        <li><a href="#"><span class="menu-icon"><i class="fa-solid fa-heart"></i></span>Favoritos</a></li>
+                        <li><a href="./Index.html"><span class="menu-icon"><i
+                                        class="fa-solid fa-house"></i></span>Home</a></li>
+                        <li><a href="#"><span class="menu-icon"><i class="fa-solid fa-heart"></i></span>Favoritos</a>
+                        </li>
                         <li><a href="#"><span class="menu-icon"><i class="fa-solid fa-pen"></i></span>Avaliação</a></li>
-                        <li ><a class="nav-menu-selected" href="./hospedagem.html"><span class="menu-icon "><i class="fa-solid fa-hotel"></i></span>Hospedagem</a></li>
+                        <li><a class="nav-menu-selected" href="./hospedagem.html"><span class="menu-icon "><i
+                                        class="fa-solid fa-hotel"></i></span>Hospedagem</a></li>
                         <li><a href="#" class="button">Fazer login</a></li>
                     </ul>
                 </div>
@@ -33,238 +36,213 @@
         </div>
     </div>
 
-        <div class="container1">
 
-<!-- style não esta pegando do main.css referenced. Não achei o problema. Incluido aqui até encontrar -->
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-    }
+    <h1>Escolha hoteis de acordo com seu tipo de viagem!</h1>
 
-    .container1 {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+    <section style="display: flex; flex-direction:column">
 
-    h1 {
-        text-align: center;
-    }
 
-    .review-item {
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; padding-left: 40px;">
+            <label>Buscar Hotéis</label>
+            <input type="text" class="input-padrao" placeholder="Digite para buscar os hoteis">
+        </div>
 
-    .review-item img {
-        max-width: 100%;
-        height: auto;
-    }
+        <h3 style="padding-left: 40px; margin: 17px 0;">Resultados</h3>
 
-    .image-wrapper {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly;flex-wrap: wrap;">
+            <div  class="cards-padrao" id="cards-padrao">
+                <img src="./images/vistas.jpg">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-    .image {
-        width: 21%; /* Adjust the width as needed */
-        margin-bottom: 10px;
-    }
+            <div class="cards-padrao">
+                <img src="./images/centro.jpg">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-    .stars {
-        text-align: center;
-        margin-top: 10px;
-    }
+            <div  class="cards-padrao">
+                <img src="./images/cafeManha.jpg">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-    .stars input[type="radio"] {
-        display: none;
-    }
+            <div  class="cards-padrao">
+                <img src="./images/tranquilidade.jpg">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-    .stars label {
-        font-size: 30px;
-        cursor: pointer;
-    }
+        </div>
 
-    .stars label:before {
-        content: '\2605'; /* Unicode character for a star */
-        color: #ccc;
-    }
+        <div class="descricao-hotel">
+            <div id="detalhes-acomodacao">
+                <h4>Hotel Lorem ipsum dolor sit amet.</h4>
+                <p>Sobre Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, iure.</p>
+                <p>Preço por noite: R$ 200,00</p>
+                <p>Outras informações: Lorem ipsum dolor sit amet...</p>
+            </div>
+        
+            <div id="opcoes-pagamento">
+                <div class="opcao-pagamento">Cartão de Crédito</div>
+                <div class="opcao-pagamento">Boleto Bancário</div>
+                <div class="opcao-pagamento">Transferência Bancária</div>
+            </div>
+        
+            <button id="botao-confirma">Confirmar Reserva</button>
+        </div>
 
-    .stars input[type="radio"]:checked ~ label:before {
-        color: #ffcc00; /* Change the star color for checked stars */
-    }
+    </section>
 
-    .review-text {
-        margin-top: 10px;
-    }
 
-    .review-text input[type="text"] {
-        width: 100%;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+    <!-- <section>
+        <div id="accommodation-details">
+            <h2>Nome da Acomodação</h2>
+            <p>Descrição da acomodação...</p>
+            <p>Preço por noite: R$ 200,00</p>
+            <p>Outras informações sobre a acomodação...</p>
+        </div>
 
-    .submit-button {
-        display: block;
-        margin-top: 10px;
-        background-color: #BF9B30;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        <div id="payment-options">
+            <div class="payment-option">Cartão de Crédito</div>
+            <div class="payment-option">Boleto Bancário</div>
+            <div class="payment-option">Transferência Bancária</div>
+        </div>
 
-    .submit-button:hover {
-        background-color: #0056b3;
-    }
-</style>
+        <button id="confirm-button">Confirmar Reserva</button>
+    </section> -->
 
-<!-- Fim do style incluido temporariamente -->
-<div class="container1"></div>
 
-            <h1>Avalie suas experiências!</h1>
-            
-            <!-- First Review Item -->
-            <div class="review-item">
-                <div class="image-wrapper">
-                    <div class="image">
-                        <img src="images/h1.jpg" alt="Paris inesquecível">
-                        <p>Paris (é tudo isso?)</p>
-                        <div class="stars">
-                            <label for="star1_1"></label>
-                            <input type="radio" id="star1_1" name="rating1" value="1">
-                            <label for="star1_2"></label>
-                            <input type="radio" id="star1_2" name="rating1" value="2">
-                            <label for="star1_3"></label>
-                            <input type="radio" id="star1_3" name="rating1" value="3">
-                            <label for="star1_4"></label>
-                            <input type="radio" id="star1_4" name="rating1" value="4">
-                            <label for="star1_5"></label>
-                            <input type="radio" id="star1_5" name="rating1" value="5">
-                        </div>
-                        <div class="review-text">
-                            <input type="text" placeholder="Conte-nos como foi!">
-                        </div>
-                        <button class="submit-button">Enviar opinião</button>
+    <h1>Avalie suas experiências!</h1>
+    <section class="avaliar-exp">
+
+        <!-- style não esta pegando do main.css referenced. Não achei o problema. Incluido aqui até encontrar -->
+
+
+
+        <!-- Fim do style incluido temporariamente -->
+
+
+     
+
+        <!-- First Review Item -->
+        <div class="review-item">
+            <div class="image-wrapper">
+                <div class="image">
+                    <img src="images/h1.jpg" alt="Paris inesquecível">
+                    <p>Paris (é tudo isso?)</p>
+                    <div class="stars">
+                        <label for="star1_1"></label>
+                        <input type="radio" id="star1_1" name="rating1" value="1">
+                        <label for="star1_2"></label>
+                        <input type="radio" id="star1_2" name="rating1" value="2">
+                        <label for="star1_3"></label>
+                        <input type="radio" id="star1_3" name="rating1" value="3">
+                        <label for="star1_4"></label>
+                        <input type="radio" id="star1_4" name="rating1" value="4">
+                        <label for="star1_5"></label>
+                        <input type="radio" id="star1_5" name="rating1" value="5">
                     </div>
-                    
-                    <!-- Repeat the structure for more images/review items -->
-                    
-                    <div class="image">
-                        <img src="images/h2.jpg" alt="Por so sol mágico">
-                        <p>Portal instagramável</p>
-                        <div class="stars">
-                            <label for="star2_1"></label>
-                            <input type="radio" id="star2_1" name="rating2" value="1">
-                            <label for="star2_2"></label>
-                            <input type="radio" id="star2_2" name="rating2" value="2">
-                            <label for="star2_3"></label>
-                            <input type="radio" id="star2_3" name="rating2" value="3">
-                            <label for="star2_4"></label>
-                            <input type="radio" id="star2_4" name="rating2" value="4">
-                            <label for="star2_5"></label>
-                            <input type="radio" id="star2_5" name="rating2" value="5">
-                        </div>
-                        <div class="review-text">
-                            <input type="text" placeholder="Conte-nos como foi!">
-                        </div>
-                        <button class="submit-button">Enviar opinião</button>
+                    <div class="review-text">
+                        <input type="text" placeholder="Conte-nos como foi!">
                     </div>
-                                    <!-- Repeat the structure for more images/review items -->
-                    
-                                    <div class="image">
-                                        <img src="images/h3.jpg" alt="Quarto com vista">
-                                        <p>Costa do Janelão</p>
-                                        <div class="stars">
-                                            <label for="star2_1"></label>
-                                            <input type="radio" id="star2_1" name="rating2" value="1">
-                                            <label for="star2_2"></label>
-                                            <input type="radio" id="star2_2" name="rating2" value="2">
-                                            <label for="star2_3"></label>
-                                            <input type="radio" id="star2_3" name="rating2" value="3">
-                                            <label for="star2_4"></label>
-                                            <input type="radio" id="star2_4" name="rating2" value="4">
-                                            <label for="star2_5"></label>
-                                            <input type="radio" id="star2_5" name="rating2" value="5">
-                                        </div>
-                                        <div class="review-text">
-                                            <input type="text" placeholder="Conte-nos como foi!">
-                                        </div>
-                                        <button class="submit-button">Enviar opinião</button>
-                                    </div>
-                                                    <!-- Repetição da estrutura para mais itens a serem avaliados -->
-                    
-                    <div class="image">
-                        <img src="images/h4.jpg" alt="Bangalôs sobre a água">
-                        <p>Bali, Bora Bora?</p>
-                        <div class="stars">
-                            <label for="star2_1"></label>
-                            <input type="radio" id="star2_1" name="rating2" value="1">
-                            <label for="star2_2"></label>
-                            <input type="radio" id="star2_2" name="rating2" value="2">
-                            <label for="star2_3"></label>
-                            <input type="radio" id="star2_3" name="rating2" value="3">
-                            <label for="star2_4"></label>
-                            <input type="radio" id="star2_4" name="rating2" value="4">
-                            <label for="star2_5"></label>
-                            <input type="radio" id="star2_5" name="rating2" value="5">
-                        </div>
-                        <div class="review-text">
-                            <input type="text" placeholder="Conte-nos como foi!">
-                        </div>
-                        <button class="submit-button">Enviar opinião</button>
-                    </div>
-                    
+                    <button class="submit-button">Enviar opinião</button>
                 </div>
+
+                <!-- Repeat the structure for more images/review items -->
+
+                <div class="image">
+                    <img src="images/h2.jpg" alt="Por so sol mágico">
+                    <p>Portal instagramável</p>
+                    <div class="stars">
+                        <label for="star2_1"></label>
+                        <input type="radio" id="star2_1" name="rating2" value="1">
+                        <label for="star2_2"></label>
+                        <input type="radio" id="star2_2" name="rating2" value="2">
+                        <label for="star2_3"></label>
+                        <input type="radio" id="star2_3" name="rating2" value="3">
+                        <label for="star2_4"></label>
+                        <input type="radio" id="star2_4" name="rating2" value="4">
+                        <label for="star2_5"></label>
+                        <input type="radio" id="star2_5" name="rating2" value="5">
+                    </div>
+                    <div class="review-text">
+                        <input type="text" placeholder="Conte-nos como foi!">
+                    </div>
+                    <button class="submit-button">Enviar opinião</button>
+                </div>
+                <!-- Repeat the structure for more images/review items -->
+
+                <div class="image">
+                    <img src="images/h3.jpg" alt="Quarto com vista">
+                    <p>Costa do Janelão</p>
+                    <div class="stars">
+                        <label for="star2_1"></label>
+                        <input type="radio" id="star2_1" name="rating2" value="1">
+                        <label for="star2_2"></label>
+                        <input type="radio" id="star2_2" name="rating2" value="2">
+                        <label for="star2_3"></label>
+                        <input type="radio" id="star2_3" name="rating2" value="3">
+                        <label for="star2_4"></label>
+                        <input type="radio" id="star2_4" name="rating2" value="4">
+                        <label for="star2_5"></label>
+                        <input type="radio" id="star2_5" name="rating2" value="5">
+                    </div>
+                    <div class="review-text">
+                        <input type="text" placeholder="Conte-nos como foi!">
+                    </div>
+                    <button class="submit-button">Enviar opinião</button>
+                </div>
+                <!-- Repetição da estrutura para mais itens a serem avaliados -->
+
+                <div class="image">
+                    <img src="images/h4.jpg" alt="Bangalôs sobre a água">
+                    <p>Bali, Bora Bora?</p>
+                    <div class="stars">
+                        <label for="star2_1"></label>
+                        <input type="radio" id="star2_1" name="rating2" value="1">
+                        <label for="star2_2"></label>
+                        <input type="radio" id="star2_2" name="rating2" value="2">
+                        <label for="star2_3"></label>
+                        <input type="radio" id="star2_3" name="rating2" value="3">
+                        <label for="star2_4"></label>
+                        <input type="radio" id="star2_4" name="rating2" value="4">
+                        <label for="star2_5"></label>
+                        <input type="radio" id="star2_5" name="rating2" value="5">
+                    </div>
+                    <div class="review-text">
+                        <input type="text" placeholder="Conte-nos como foi!">
+                    </div>
+                    <button class="submit-button">Enviar opinião</button>
+                </div>
+
             </div>
         </div>
-<!-- Fim conteudo 1 avaliação de experiências incluido por Jayme -->
+    </section>
+    <!-- Fim conteudo 1 avaliação de experiências incluido por Jayme -->
 
-<!-- Parte PEDRO FRANCA - Inserir recomendacoes ID07 -->
+    <!-- Parte PEDRO FRANCA - Inserir recomendacoes ID07 -->
 
-<section class="recomendacoes">
-    <div>
-        <h1>Faça uma recomendação</h1>
-        <input type="text" id="campo-hospedagem" placeholder="Digite para buscar hospedagens">
-    </div>
-    <div>
-        <h3>Quando ocorreu sua hospedagem?</h3>
-        <span>Selecione o mês</span> <input type="text" id="mes" placeholder="mês"> <input type="text" id="ano" placeholder="ano">
-    </div>
+    <h1>Faça uma recomendação</h1>
+    <section class="recomendacoes">
+        <div>
+         
+            <input type="text" class="input-padrao" placeholder="Digite para buscar hospedagens">
+        </div>
+        <div>
+            <h3>Quando ocorreu sua hospedagem?</h3>
+            <span>Selecione o mês</span> <input type="text" id="mes" placeholder="mês"> <input type="text" id="ano"
+                placeholder="ano">
+        </div>
         <h3>Descreva como foi sua hospedagem</h3>
         <textarea rows="5" cols="40" placeholder="Digite sua experiência aqui"></textarea>
-    <div>
-        <h3>Indico essa hospedagem?</h3>
-        <ul>
-            <button><i class="fa-regular fa-thumbs-up verde"></i></button>
-            <button><i class="fa-regular fa-face-meh cinza"></i></button>
-            <button><i class="fa-regular fa-thumbs-down vermelho"></i></i></button>
-        </ul>
-    </div>
-</section>
-<!-- Parte PEDRO FRANCA - Inserir recomendacoes ID07 -->
-
-</div>      
-<!-- <p>Conteudo 3</p> -->
-</div>
-</div>      
-<!-- <p>Conteudo 4</p> -->
-</div>
-</div>      
-<!-- <p>Conteudo 5</p> -->
-</div>
-
+        <div>
+            <h3>Indico essa hospedagem?</h3>
+            <ul>
+                <button><i class="fa-regular fa-thumbs-up verde"></i></button>
+                <button><i class="fa-regular fa-face-meh cinza"></i></button>
+                <button><i class="fa-regular fa-thumbs-down vermelho"></i></i></button>
+            </ul>
+        </div>
+    </section>
+    <!-- Parte PEDRO FRANCA - Inserir recomendacoes ID07 -->
 
     <footer>
         <div id="footer_content">

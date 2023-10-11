@@ -23,17 +23,24 @@ body {
     background-color: #f0f0f0;
 }
 
-.container1 {
+.avaliar-exp {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+nav {
+    background-color: var(--dark-yellow);
+    color: #fff;
+}
+
+
 h1 {
     text-align: center;
+    margin-top: 24px;
 }
 
 .review-item {
@@ -55,7 +62,8 @@ h1 {
 }
 
 .image {
-    width: 21%; /* Adjust the width as needed */
+    width: 21%;
+    /* Adjust the width as needed */
     margin-bottom: 10px;
 }
 
@@ -74,12 +82,14 @@ h1 {
 }
 
 .stars label:before {
-    content: '\2605'; /* Unicode character for a star */
+    content: '\2605';
+    /* Unicode character for a star */
     color: #ccc;
 }
 
-.stars input[type="radio"]:checked ~ label:before {
-    color: #ffcc00; /* Change the star color for checked stars */
+.stars input[type="radio"]:checked~label:before {
+    color: #ffcc00;
+    /* Change the star color for checked stars */
 }
 
 .review-text {
@@ -107,6 +117,7 @@ h1 {
 .submit-button:hover {
     background-color: #0056b3;
 }
+
 /* fim css conteudo 1 hospedagem*/
 
 
@@ -114,9 +125,9 @@ h1 {
 
 .recomendacoes {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 32px;
-    border-top: solid 2px red;
+    /* border-top: solid 2px red; */
 }
 
 .recomendacoes h1 {
@@ -125,18 +136,19 @@ h1 {
     text-align: start;
 }
 
-#campo-hospedagem {
+.input-padrao {
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
-    width: 350px;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out; 
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+    max-width: 350px;
 }
 
-#campo-hospedagem:hover {
+.input-padrao:hover {
     background-color: var(--light-yellow);
 }
 
@@ -148,33 +160,35 @@ h1 {
     margin: 25px 0 10px 0;
 }
 
-#mes, #ano {
+#mes,
+#ano {
     width: 60px;
     text-align: center;
     border-radius: 5px;
-    color: white; 
-    font-weight: bold; 
-    padding: 5px 10px; 
-    margin-right: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.2s ease-in-out; 
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
     border: none;
 }
 
-#mes:hover, #ano:hover {
+#mes:hover,
+#ano:hover {
     background-color: var(--light-yellow);
 }
 
 textarea {
     width: 100%;
-    max-width: 450px; 
-    height: 100px; 
-    padding: 10px; 
-    font-size: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    resize: none; 
-    cursor: pointer; 
+    max-width: 450px;
+    height: 100px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    cursor: pointer;
     transition: background-color 0.1s ease-in-out;
 }
 
@@ -184,20 +198,29 @@ textarea:hover {
 
 /* Estilo para os botões */
 .recomendacoes button {
-    display: inline-block; /* Tornar os ícones elementos em linha */
-    padding: 10px 20px; /* Espaçamento interno para o botão */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Borda arredondada */
-    margin: 2px; /* Espaçamento entre os botões */
-    cursor: pointer; /* Cursor como mãozinha para indicar que é clicável */
-    text-align: center; /* Alinhar o texto ao centro do botão */
-    font-size: 16px; /* Tamanho da fonte */
+    display: inline-block;
+    /* Tornar os ícones elementos em linha */
+    padding: 10px 20px;
+    /* Espaçamento interno para o botão */
+    border: none;
+    /* Remover borda */
+    border-radius: 5px;
+    /* Borda arredondada */
+    margin: 2px;
+    /* Espaçamento entre os botões */
+    cursor: pointer;
+    /* Cursor como mãozinha para indicar que é clicável */
+    text-align: center;
+    /* Alinhar o texto ao centro do botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
     background-color: #ffffff;
 }
 
-  /* Estilo para o hover (quando o mouse passa por cima) */
+/* Estilo para o hover (quando o mouse passa por cima) */
 .recomendacoes button:hover {
-    background-color: var(--light-yellow); /* Cor de fundo mais escura no hover */
+    background-color: var(--light-yellow);
+    /* Cor de fundo mais escura no hover */
 }
 
 .verde {
@@ -215,4 +238,166 @@ textarea:hover {
     font-size: 25px;
 }
 
-/* fim css conteudo 2 hospedagem*/
+.review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 21%;
+    /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+.stars {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.stars label:before {
+    content: '\2605';
+    /* Unicode character for a star */
+    color: #ccc;
+}
+
+.stars input[type="radio"]:checked~label:before {
+    color: #ffcc00;
+    /* Change the star color for checked stars */
+}
+
+.review-text {
+    margin-top: 10px;
+}
+
+.review-text input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #BF9B30;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.cards-padrao{
+    max-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cards-padrao img{
+    height: 141px;
+    width: 179px;
+}
+
+.descricao-hotel {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 23rem;
+    left: 5rem;
+}
+
+section:hover .descricao-hotel {
+    display: block;
+}
+
+#detalhes-acomodacao {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#opcoes-pagamento {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.opcao-pagamento {
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opcao-pagamento:hover {
+    background-color: #f0f0f0;
+}
+
+#botao-confirma {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botao-confirma:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 916px) {
+    #footer_content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer_content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
