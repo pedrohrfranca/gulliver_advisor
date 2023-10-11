@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulliver Advisor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <!-- container -->
+    <div>
+        <!-- menu -->
+        <div class="menu-container">
+            <nav>
+                <div class="container">
+                    <h1 class="logo">Gulliver<span class="sub-title-main">Advisor</span></h1>
+                    <ul class="nav-menu">
+                        <li><a href="./Index.html"><span class="menu-icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
+                        <li><a href="#"><span class="menu-icon"><i class="fa-solid fa-heart"></i></span>Favoritos</a></li>
+                        <li><a href="#"><span class="menu-icon"><i class="fa-solid fa-pen"></i></span>Avaliação</a></li>
+                        <li ><a class="nav-menu-selected" href="./hospedagem.html"><span class="menu-icon "><i class="fa-solid fa-hotel"></i></span>Hospedagem</a></li>
+                        <li><a href="#" class="button">Fazer login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+        <div class="container1">
+
+<!-- style não esta pegando do main.css referenced. Não achei o problema. Incluido aqui até encontrar -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container1 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .review-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .review-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 21%; /* Adjust the width as needed */
+        margin-bottom: 10px;
+    }
+
+    .stars {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .stars input[type="radio"] {
+        display: none;
+    }
+
+    .stars label {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .stars label:before {
+        content: '\2605'; /* Unicode character for a star */
+        color: #ccc;
+    }
+
+    .stars input[type="radio"]:checked ~ label:before {
+        color: #ffcc00; /* Change the star color for checked stars */
+    }
+
+    .review-text {
+        margin-top: 10px;
+    }
+
+    .review-text input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .submit-button {
+        display: block;
+        margin-top: 10px;
+        background-color: #BF9B30;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<!-- Fim do style incluido temporariamente -->
+<div class="container1"></div>
+
+            <h1>Avalie suas experiências!</h1>
+            
+            <!-- First Review Item -->
+            <div class="review-item">
+                <div class="image-wrapper">
+                    <div class="image">
+                        <img src="images/h1.jpg" alt="Paris inesquecível">
+                        <p>Paris (é tudo isso?)</p>
+                        <div class="stars">
+                            <label for="star1_1"></label>
+                            <input type="radio" id="star1_1" name="rating1" value="1">
+                            <label for="star1_2"></label>
+                            <input type="radio" id="star1_2" name="rating1" value="2">
+                            <label for="star1_3"></label>
+                            <input type="radio" id="star1_3" name="rating1" value="3">
+                            <label for="star1_4"></label>
+                            <input type="radio" id="star1_4" name="rating1" value="4">
+                            <label for="star1_5"></label>
+                            <input type="radio" id="star1_5" name="rating1" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                    
+                    <!-- Repeat the structure for more images/review items -->
+                    
+                    <div class="image">
+                        <img src="images/h2.jpg" alt="Por so sol mágico">
+                        <p>Portal instagramável</p>
+                        <div class="stars">
+                            <label for="star2_1"></label>
+                            <input type="radio" id="star2_1" name="rating2" value="1">
+                            <label for="star2_2"></label>
+                            <input type="radio" id="star2_2" name="rating2" value="2">
+                            <label for="star2_3"></label>
+                            <input type="radio" id="star2_3" name="rating2" value="3">
+                            <label for="star2_4"></label>
+                            <input type="radio" id="star2_4" name="rating2" value="4">
+                            <label for="star2_5"></label>
+                            <input type="radio" id="star2_5" name="rating2" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                                    <!-- Repeat the structure for more images/review items -->
+                    
+                                    <div class="image">
+                                        <img src="images/h3.jpg" alt="Quarto com vista">
+                                        <p>Costa do Janelão</p>
+                                        <div class="stars">
+                                            <label for="star2_1"></label>
+                                            <input type="radio" id="star2_1" name="rating2" value="1">
+                                            <label for="star2_2"></label>
+                                            <input type="radio" id="star2_2" name="rating2" value="2">
+                                            <label for="star2_3"></label>
+                                            <input type="radio" id="star2_3" name="rating2" value="3">
+                                            <label for="star2_4"></label>
+                                            <input type="radio" id="star2_4" name="rating2" value="4">
+                                            <label for="star2_5"></label>
+                                            <input type="radio" id="star2_5" name="rating2" value="5">
+                                        </div>
+                                        <div class="review-text">
+                                            <input type="text" placeholder="Conte-nos como foi!">
+                                        </div>
+                                        <button class="submit-button">Enviar opinião</button>
+                                    </div>
+                                                    <!-- Repetição da estrutura para mais itens a serem avaliados -->
+                    
+                    <div class="image">
+                        <img src="images/h4.jpg" alt="Bangalôs sobre a água">
+                        <p>Bali, Bora Bora?</p>
+                        <div class="stars">
+                            <label for="star2_1"></label>
+                            <input type="radio" id="star2_1" name="rating2" value="1">
+                            <label for="star2_2"></label>
+                            <input type="radio" id="star2_2" name="rating2" value="2">
+                            <label for="star2_3"></label>
+                            <input type="radio" id="star2_3" name="rating2" value="3">
+                            <label for="star2_4"></label>
+                            <input type="radio" id="star2_4" name="rating2" value="4">
+                            <label for="star2_5"></label>
+                            <input type="radio" id="star2_5" name="rating2" value="5">
+                        </div>
+                        <div class="review-text">
+                            <input type="text" placeholder="Conte-nos como foi!">
+                        </div>
+                        <button class="submit-button">Enviar opinião</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-- Fim conteudo 1 avaliação de experiências incluido por Jayme -->
+
+
+</div>      
+<!-- <p>Conteudo 2</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 3</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 4</p> -->
+</div>
+</div>      
+<!-- <p>Conteudo 5</p> -->
+</div>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contats">
+                <h1> Guliver Advisor</h1>
+                <p> A trip without leaving home</p>
+                <div id="footer_social_midia">
+                    <a href="#" class="footer_link" id="instagram"></a>
+                    <i class="fa-brands fa-instagram"></i>
+                    <p> @Guliver_Pelo_mundo</p>
+
+                    <a href="#" class="footer_link" id="twitter"></a>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <p>Guliver_Advisor</p>
+
+                    <a href="#" class="footer_link" id="facebook"></a>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <p>Guliver Traveler</p>
+                </div>
+            </div>
+            <ul class="footer-list">
+
+                <li>
+                    <h3> Blog</h3>
+                </li>
+                <li> <a href="#" class="footer_link">Viagens</a></li>
+                <li> <a href="#" class="footer_link">Musicas</a></li>
+                <li> <a href="#" class="footer_link">Culturas</a></li>
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <h3>Dúvidas Frequentes</h3>
+                </li>
+                <li> <a href="#" class="footer_link">Como me Inscrever no blog?</a></li>
+                <li> <a href="#" class="footer_link">Como me atualizar das próximas viagens?</a></li>
+                <li> <a href="#" class="footer_link">Como escolher o melhor destino?</a></li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+
+</html>
